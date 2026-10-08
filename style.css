@@ -1,7 +1,7 @@
 body{
     display: flex;
+    flex-wrap: wrap; 
     
-
 }
 
 canvas{
@@ -9,3 +9,11 @@ canvas{
     height: 80vh;
     width: 80vh;
 }
+
+canvas .myChart3{
+    margin-top: 20px;
+    height: 10vh !important; 
+    width: 10vh !important;
+
+}
+
