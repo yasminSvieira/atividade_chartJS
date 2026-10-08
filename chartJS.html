@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <div class="graficos"></div>
-
       <div class="grafico">
         <canvas id="myChart"></canvas>
       </div>
@@ -16,6 +15,9 @@
         <canvas id="myChart2"></canvas>
       </div>
 
+       <div class="grafico">
+        <canvas id="myChart3"></canvas>
+      </div>
 
 </body>
 
@@ -79,4 +81,23 @@
       }
     }
   });
+
+    const ctx3 = document.getElementById('myChart3');
+
+  new Chart(ctx3, {
+    type: 'doughnut',
+    data: {
+      labels: ['Red', 'Blue'],
+        datasets: [{
+        label: 'MyChart3',
+        data: [300, 60],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)'
+        ],
+    hoverOffset: 4
+      }]
+    },
+  }
+);
 </script>
